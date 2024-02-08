@@ -1,3 +1,6 @@
+
+
+#pragma once
 class SecDuration{
 protected :
     int second;
@@ -8,5 +11,5 @@ public:
     //constructeur par default
     SecDuration();
 
-
+  FullDuration convert_FullDuration();
 };

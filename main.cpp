@@ -1,7 +1,7 @@
 #include <iostream>
-#include "forme.cpp"
-#include "FullDuration.cpp"
-#include "SecDuration.cpp"
+#include "frome.h"
+#include "FullDuration.h"
+#include "SecDuration.h"
 void testexo1(){
         Forme persone1(60,87,150);
         Forme noboby;
