@@ -6,10 +6,10 @@ protected:
     int f1;
     int f2;
 public:
-    //constructeur par default
+    //constructeur
     Forme(int _f0,int _f1, int _f2);
 
-    //consturcteur pour un objet vide
+    //consturcteur par default
     Forme();
 
     //calcule le coef en foncrion de f0,f1,f2
