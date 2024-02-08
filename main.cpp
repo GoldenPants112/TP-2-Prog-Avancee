@@ -1,6 +1,7 @@
 #include <iostream>
 #include "forme.cpp"
-
+#include "FullDuration.cpp"
+#include "SecDuration.cpp"
 void testexo1(){
         Forme persone1(60,87,150);
         Forme noboby;
@@ -13,11 +14,14 @@ void testexo1(){
 };
 
 void testexo2(){
-
+    FullDuration timesec1(6,2,5,30);
+    int s = timesec1.convert_SecDuration();
+    std::cout << s << std::endl ;
 }
+
 int main() {
 
-testexo1();
+testexo2();
 
     return 0;
 

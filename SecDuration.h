@@ -1,10 +1,12 @@
-Class SecDuration{
+class SecDuration{
 protected :
     int second;
 public:
     //constructeur
-    SecDuration(int seconde_duration);
+    explicit SecDuration(int seconde_duration);
 
     //constructeur par default
     SecDuration();
+
+
 };
