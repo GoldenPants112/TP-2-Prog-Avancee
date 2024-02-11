@@ -1,5 +1,6 @@
 #include "SecDuration.h"
-#include "FullDuration.h"
+
+
 SecDuration::SecDuration(int seconde_duration){
     second = seconde_duration;
 }
@@ -11,5 +12,12 @@ SecDuration::SecDuration() {
 FullDuration SecDuration::convert_FullDuration() {
     int j = second%86400;
     int h = (second-j*86400)%3600;
-    int m = (second-
+    int m = (second-(j*86400 + h*3600));
+    int s = (second-(j*86400 + h*3600 + m*60));
+    FullDuration timeconvert (j,h,m,s);
+    return timeconvert;
+}
+
+int SecDuration::affiche() {
+    return second;
 }

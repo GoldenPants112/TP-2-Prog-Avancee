@@ -1,6 +1,6 @@
-
-
 #pragma once
+#include "FullDuration.h"
+
 class SecDuration{
 protected :
     int second;
@@ -12,4 +12,6 @@ public:
     SecDuration();
 
   FullDuration convert_FullDuration();
+
+  int affiche();
 };
