@@ -43,3 +43,35 @@ FullDuration::FullDuration(int _second) {
      minute = (_second-(jour*86400 + heure*3600))/60;
      second = (_second-(jour*86400 + heure*3600 + minute*60));
 }
+
+void FullDuration::incrementation_seconde(int _increment) {
+    second+= _increment;
+}
+
+void FullDuration::incrementation_seconde() {
+    second +=1;
+}
+
+void FullDuration::incrementation_minute(int _increment) {
+    minute += _increment;
+}
+
+void FullDuration::incrementation_minute() {
+    minute+=1;
+}
+
+void FullDuration::incrementation_heure(int _increment) {
+    heure += _increment;
+}
+
+void FullDuration::incrementation_heure() {
+    heure += 1;
+}
+
+void FullDuration::incrementation_jour(int _increment) {
+    jour += _increment;
+}
+
+void FullDuration::incrementation_jour() {
+    jour +=1;
+}

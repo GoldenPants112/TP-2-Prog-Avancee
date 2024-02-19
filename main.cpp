@@ -26,13 +26,29 @@ void testexo2(){
 
 
     SecDuration temps1(1,1,1,1);
+    temps1.incrementation(16);
     std::cout << temps1.affiche() << std::endl;
 
+
+
+
     FullDuration temps2 (90061);
-    std::cout << temps2.affichejour() << " jour" << std::endl;
-    std::cout << temps2.afficheheure() << " heure" << std::endl;
-    std::cout << temps2.afficheminute() << " minute" << std::endl;
-    std::cout << temps2.afficheseconde() << " seconde" << std::endl;
+    temps2.incrementation_jour(2);
+    temps2.incrementation_heure(2);
+    temps2.incrementation_minute(2);
+    temps2.incrementation_seconde(2);
+
+    temps2.incrementation_jour();
+    temps2.incrementation_heure();
+    temps2.incrementation_minute();
+    temps2.incrementation_seconde();
+
+
+
+    std::cout << temps2.affichejour() << " jour(s)." << std::endl;
+    std::cout << temps2.afficheheure() << " heure(s)." << std::endl;
+    std::cout << temps2.afficheminute() << " minute(s)." << std::endl;
+    std::cout << temps2.afficheseconde() << " seconde(s)." << std::endl;
 }
 
 

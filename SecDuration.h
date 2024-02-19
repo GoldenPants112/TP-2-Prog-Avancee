@@ -18,5 +18,9 @@ public:
     //Methode qui converti et renvoie une FullDuration
     FullDuration convert_FullDuration();
 
-  int affiche();
+    int affiche();
+
+    //incrementation
+    void incrementation(int _increment);
+    void incrementation();
 };

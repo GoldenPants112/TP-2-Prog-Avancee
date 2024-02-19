@@ -18,9 +18,25 @@ public:
     //convertir en seconde
     int convert_SecDuration();
 
+    //renvoi les secondes, minutes,heures et jours
     int affichejour();
     int afficheheure();
     int afficheminute();
     int afficheseconde();
+
+    //incremente les secondes, minutes,heures et jours
+
+    void incrementation_seconde(int _increment);
+    void incrementation_seconde();
+
+    void incrementation_minute(int _increment);
+    void incrementation_minute();
+
+    void incrementation_heure(int _increment);
+    void incrementation_heure();
+
+    void incrementation_jour(int _increment);
+    void incrementation_jour();
+
 
 };

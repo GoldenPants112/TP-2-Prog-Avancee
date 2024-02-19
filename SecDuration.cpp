@@ -28,3 +28,11 @@ second += _heure *3600;
 second += _minute *60;
 second += _second;
 }
+
+void SecDuration::incrementation() {
+    second += 1;
+}
+
+void SecDuration::incrementation(int _increment) {
+    second +=_increment;
+}
