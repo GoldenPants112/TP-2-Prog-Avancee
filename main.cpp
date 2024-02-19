@@ -17,8 +17,13 @@
 
 void testexo2(){
 
-    FullDuration time1(1,2,3,4);
-    std::cout << time1.affichejour() << std::endl ;
+    SecDuration time1(834567);
+    FullDuration time1cov( time1.convert_FullDuration());
+    std::cout << time1cov.affichejour() << std::endl ;
+    std::cout << time1cov.afficheheure() << std::endl ;
+    std::cout << time1cov.afficheminute() << std::endl ;
+    std::cout << time1cov.afficheseconde() << std::endl ;
+
 }
 
 int main() {

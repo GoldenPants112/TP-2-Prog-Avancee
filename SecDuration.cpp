@@ -10,9 +10,9 @@ SecDuration::SecDuration() {
 }
 
 FullDuration SecDuration::convert_FullDuration() {
-    int j = second%86400;
-    int h = (second-j*86400)%3600;
-    int m = (second-(j*86400 + h*3600));
+    int j = second/86400;
+    int h = (second-j*86400)/3600;
+    int m = (second-(j*86400 + h*3600))/60;
     int s = (second-(j*86400 + h*3600 + m*60));
     FullDuration timeconvert (j,h,m,s);
     return timeconvert;
