@@ -16,15 +16,26 @@
 //};
 
 void testexo2(){
+//
+//    SecDuration time1(834567);
+//    FullDuration time1cov( time1.convert_FullDuration());
+//    std::cout << time1cov.affichejour() << std::endl ;
+//    std::cout << time1cov.afficheheure() << std::endl ;
+//    std::cout << time1cov.afficheminute() << std::endl ;
+//    std::cout << time1cov.afficheseconde() << std::endl ;
 
-    SecDuration time1(834567);
-    FullDuration time1cov( time1.convert_FullDuration());
-    std::cout << time1cov.affichejour() << std::endl ;
-    std::cout << time1cov.afficheheure() << std::endl ;
-    std::cout << time1cov.afficheminute() << std::endl ;
-    std::cout << time1cov.afficheseconde() << std::endl ;
 
+    SecDuration temps1(1,1,1,1);
+    std::cout << temps1.affiche() << std::endl;
+
+    FullDuration temps2 (90061);
+    std::cout << temps2.affichejour() << " jour" << std::endl;
+    std::cout << temps2.afficheheure() << " heure" << std::endl;
+    std::cout << temps2.afficheminute() << " minute" << std::endl;
+    std::cout << temps2.afficheseconde() << " seconde" << std::endl;
 }
+
+
 
 int main() {
 

@@ -36,3 +36,10 @@ int FullDuration::afficheminute() {
 int FullDuration::afficheseconde() {
     return second;
 }
+
+FullDuration::FullDuration(int _second) {
+     jour = _second/86400;
+     heure = (_second-jour*86400)/3600;
+     minute = (_second-(jour*86400 + heure*3600))/60;
+     second = (_second-(jour*86400 + heure*3600 + minute*60));
+}

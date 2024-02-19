@@ -21,3 +21,10 @@ FullDuration SecDuration::convert_FullDuration() {
 int SecDuration::affiche() {
     return second;
 }
+
+SecDuration::SecDuration(int _jour, int _heure, int _minute, int _second) {
+second += _jour * 86400;
+second += _heure *3600;
+second += _minute *60;
+second += _second;
+}
