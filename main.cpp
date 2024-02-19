@@ -17,7 +17,6 @@
 
 void testexo2(){
 
-
     FullDuration time1(1,2,3,4);
     std::cout << time1.affichejour() << std::endl ;
 }

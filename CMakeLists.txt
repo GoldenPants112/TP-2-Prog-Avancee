@@ -1,13 +1,15 @@
 cmake_minimum_required(VERSION 3.27)
-project("TP 2")
+project(TP_2)
 
-set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD 14)
 
-add_executable("TP 2" main.cpp
+include_directories(.)
+
+add_executable(TP_2
+        Forme.cpp
         frome.h
-        Frome.cpp
+        FullDuration.cpp
+        FullDuration.h
+        main.cpp
         SecDuration.cpp
-        SecDuration.h
-        FullDutration.cpp
-        FullDutration.h
-        Sec_Duration.h)
+        SecDuration.h)

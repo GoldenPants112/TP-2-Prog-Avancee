@@ -1,4 +1,6 @@
 #include "frome.h"
+#include <iostream>
+
 Forme::Forme(int _f0,int _f1, int _f2){
 f0=_f0;
 f1=_f1;
