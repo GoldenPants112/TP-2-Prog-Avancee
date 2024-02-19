@@ -36,3 +36,14 @@ void SecDuration::incrementation() {
 void SecDuration::incrementation(int _increment) {
     second +=_increment;
 }
+
+void SecDuration::add_SecDuration(SecDuration duree) {
+    second += duree.affiche();
+}
+
+void SecDuration::add_FullDuration(FullDuration duree) {
+    second += (duree.affichejour() * 86400);
+    second += (duree.afficheheure() *3600);
+    second += (duree.afficheminute() * 60);
+    second += duree.afficheseconde();
+}

@@ -39,4 +39,14 @@ public:
     void incrementation_jour();
 
 
+    //ajout des duree Secondes et FullDuration
+
+    //
+    //Pas de classe SecDuration mais des int => dans le main on met var.affiche(), avec var de classe SecDuration.
+    //
+
+    void add_second(int _second);
+
+    void add_FullDuration (FullDuration duree);
+
 };

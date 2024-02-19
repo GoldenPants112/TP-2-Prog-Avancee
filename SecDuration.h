@@ -23,4 +23,11 @@ public:
     //incrementation
     void incrementation(int _increment);
     void incrementation();
+
+    //ajout des duree Secondes et FullDuration
+    void add_SecDuration(SecDuration duree);
+
+    void add_FullDuration(FullDuration duree);
+
+
 };

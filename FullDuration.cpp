@@ -75,3 +75,17 @@ void FullDuration::incrementation_jour(int _increment) {
 void FullDuration::incrementation_jour() {
     jour +=1;
 }
+
+void FullDuration::add_FullDuration(FullDuration duree) {
+    jour += duree.jour;
+    heure += duree.heure;
+    minute += duree.minute;
+    second += duree.second;
+}
+
+void FullDuration::add_second(int _second) {
+    jour += _second/86400;
+    heure += (_second-jour*86400)/3600;
+    minute += (_second-(jour*86400 + heure*3600))/60;
+    second += (_second-(jour*86400 + heure*3600 + minute*60));
+}
