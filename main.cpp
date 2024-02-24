@@ -27,8 +27,10 @@ void testexo2(){
 
     SecDuration temps1(1,1,1,1);
 //    temps1.incrementation(16);
-    FullDuration duree_ajoute(1, 2, 3, 4);
+    FullDuration duree_ajoute(1, 2, 50, 54);
     temps1.add_FullDuration(duree_ajoute);
+
+
     SecDuration duree_en_sec(237895);
     temps1.add_SecDuration(duree_en_sec);
     std::cout << temps1.affiche() << " seconde(s)"<< std::endl;
@@ -42,7 +44,7 @@ void testexo2(){
 
     std::cout << "__________________________________________" <<std::endl;
 
-    FullDuration temps2 (90061);
+    FullDuration temps2 (1,2,5,5);
 
 //    temps2.incrementation_jour(2);
 //    temps2.incrementation_heure(2);
@@ -55,13 +57,13 @@ void testexo2(){
 //    temps2.incrementation_seconde();
 
 //    FullDuration duree_ajoute(1,2,3,4);
-      SecDuration durre_sec_ajoute (132568);
-    temps2.add_FullDuration(durre_sec_ajoute.affiche());
+      FullDuration durre_ajoutee (0,0,40,30);
+      FullDuration somme_total = temps2 + durre_ajoutee;
 
-    std::cout << temps2.affichejour() << " jour(s)." << std::endl;
-    std::cout << temps2.afficheheure() << " heure(s)." << std::endl;
-    std::cout << temps2.afficheminute() << " minute(s)." << std::endl;
-    std::cout << temps2.afficheseconde() << " seconde(s)." << std::endl;
+    std::cout << somme_total.affichejour() << " jour(s)." << std::endl;
+    std::cout << somme_total.afficheheure() << " heure(s)." << std::endl;
+    std::cout << somme_total.afficheminute() << " minute(s)." << std::endl;
+    std::cout << somme_total.afficheseconde() << " seconde(s)." << std::endl;
 }
 
 

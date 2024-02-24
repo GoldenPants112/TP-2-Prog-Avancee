@@ -89,3 +89,12 @@ void FullDuration::add_second(int _second) {
     minute += (_second-(jour*86400 + heure*3600))/60;
     second += (_second-(jour*86400 + heure*3600 + minute*60));
 }
+
+FullDuration operator+(FullDuration duree1, FullDuration duree2) {
+    FullDuration somme_duree;
+    somme_duree.jour= duree1.jour + duree2.jour ;
+    somme_duree.heure=duree1.heure + duree2.heure;
+    somme_duree.minute=duree1.minute + duree2.minute;
+    somme_duree.second=duree1.second + duree2.second;
+    return somme_duree;
+}

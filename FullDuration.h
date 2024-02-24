@@ -42,11 +42,13 @@ public:
     //ajout des duree Secondes et FullDuration
 
     //
-    //Pas de classe SecDuration mais des int => dans le main on met var.affiche(), avec var de classe SecDuration.
+    //Pas de classe SecDuration mais des int => dans le main on met var.affiche(), avec var de classe 'SecDuration'.
     //
 
     void add_second(int _second);
 
     void add_FullDuration (FullDuration duree);
+
+    friend  FullDuration operator+ (FullDuration duree1 , FullDuration duree2);
 
 };
