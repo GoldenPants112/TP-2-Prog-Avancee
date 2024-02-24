@@ -47,3 +47,16 @@ void SecDuration::add_FullDuration(FullDuration duree) {
     second += (duree.afficheminute() * 60);
     second += duree.afficheseconde();
 }
+
+
+
+
+//A continuer vv
+
+
+//SecDuration operator+(SecDuration duree1, FullDuration duree2) {
+//    //converti la variable FullDuration en SecDuration
+//    SecDuration duree2_conv (duree2.affichejour(),duree2.afficheheure(),duree2.afficheminute(),duree2.afficheseconde());
+//    SecDuration somme_duree (duree1.affiche() + duree2_conv.affiche());
+//    return somme_duree;
+//}

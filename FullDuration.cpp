@@ -3,8 +3,11 @@
 
 FullDuration::FullDuration(int _jour, int _heure, int _minute, int _second) {
     jour=_jour;
+
     heure=_heure;
+
     minute= _minute;
+
     second = _second;
 }
 
@@ -97,4 +100,23 @@ FullDuration operator+(FullDuration duree1, FullDuration duree2) {
     somme_duree.minute=duree1.minute + duree2.minute;
     somme_duree.second=duree1.second + duree2.second;
     return somme_duree;
+}
+
+
+
+
+
+void FullDuration::normalise() {
+    while (second >= 60) {
+        second -= 60;
+        minute++;
+    }
+    while (minute >= 60) {
+        minute -= 60;
+        heure++;
+    }
+    while (heure >= 24) {
+        heure -= 24;
+        jour++;
+    }
 }

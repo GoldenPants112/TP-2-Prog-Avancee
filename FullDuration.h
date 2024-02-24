@@ -38,6 +38,9 @@ public:
     void incrementation_jour(int _increment);
     void incrementation_jour();
 
+    //fonciton qui permet d'eviter les seocndes >60, minutes >60 et les heures >24. et corrige la duree en foinction;
+    void normalise();
+
 
     //ajout des duree Secondes et FullDuration
 
@@ -49,6 +52,8 @@ public:
 
     void add_FullDuration (FullDuration duree);
 
+
+    //surchage de l'opperateur + pour additionner des variables de type FullDuartion
     friend  FullDuration operator+ (FullDuration duree1 , FullDuration duree2);
 
 };
