@@ -56,14 +56,15 @@ void testexo2(){
 //    temps2.incrementation_seconde();
 
 //    FullDuration duree_ajoute(1,2,3,4);
-      FullDuration durre_ajoutee (0,0,15,30);
-      FullDuration somme_total = temps2 + durre_ajoutee;
-      somme_total.normalise();
+    FullDuration durre_ajoutee (1,2,10,15);
+    FullDuration  dureeinitialle(0,0,55,55);
+    FullDuration somme_duree = dureeinitialle + durre_ajoutee;
+    somme_duree.normalise();
 
-    std::cout << somme_total.affichejour() << " jour(s)." << std::endl;
-    std::cout << somme_total.afficheheure() << " heure(s)." << std::endl;
-    std::cout << somme_total.afficheminute() << " minute(s)." << std::endl;
-    std::cout << somme_total.afficheseconde() << " seconde(s)." << std::endl;
+   std::cout << somme_duree.affichejour() << " jour(s)." << std::endl;
+   std::cout << somme_duree.afficheheure() << " heure(s)." << std::endl;
+   std::cout << somme_duree.afficheminute() << " minute(s)." << std::endl;
+   std::cout << somme_duree.afficheseconde() << " seconde(s)." << std::endl;
 }
 
 

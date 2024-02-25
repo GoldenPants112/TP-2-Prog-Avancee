@@ -30,5 +30,5 @@ public:
     void add_FullDuration(FullDuration duree);
 
     //surchage de l'opperateur + pour additionner des variables de type FullDuartion
-    friend  FullDuration operator+ (SecDuration duree1 , FullDuration duree2);
+    friend SecDuration operator+ (SecDuration duree1 , SecDuration duree2);
 };
