@@ -1,7 +1,8 @@
 #include <iostream>
-#include "frome.h"
-#include "FullDuration.h"
-#include "SecDuration.h"
+#include "C++/Exo1/frome.h"
+#include "C++/Exo2/FullDuration.h"
+#include "C++/Exo2/SecDuration.h"
+#include "C++/Exo3/Month.h"
 
 
 void testexo1(){
@@ -69,9 +70,18 @@ void testexo2(){
 
 
 
+void testexo3(){
+    Month january (4);
+    std::cout << january.display_days() << std::endl;
+}
+
+
+
+
+
 int main() {
 
-    testexo2();
+    testexo3();
 
     return 0;
 
