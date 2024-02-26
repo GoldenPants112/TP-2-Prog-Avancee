@@ -1,9 +1,10 @@
 #pragma once
+#include "day.h"
 
 class Month{
 private:
     int month_number;
-    int days;
+    Day days;
 
 
 public:

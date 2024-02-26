@@ -71,7 +71,7 @@ void testexo2(){
 
 
 void testexo3(){
-    Month january (4);
+    Month january (1);
     std::cout << january.display_days() << std::endl;
 }
 

@@ -9,20 +9,20 @@ Month::Month(int _month_number) {
         case 8:
         case 10:
         case 12:
-            days = 31;
+            days.set_day_position(31);
             break;
         case 4:
         case 6:
         case 9:
         case 11:
-            days = 30;
+            days.set_day_position(30);
             break;
         case 2:
-            days = 28;
+            days.set_day_position(28);
             break;
     }
 }
 
 int Month::display_days() {
-    return days;
+    return days.get_day_position();
 }
