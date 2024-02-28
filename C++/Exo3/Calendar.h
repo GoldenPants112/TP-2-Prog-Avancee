@@ -1,11 +1,9 @@
 #pragma once
+#include "Month.h"
+
 
 class Calendar{
-private:
-    int year;
-
-
 public:
-    Calendar(int _year);
-
+    Calendar();
+    void display(int _year);
 };

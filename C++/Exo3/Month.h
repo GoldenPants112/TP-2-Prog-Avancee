@@ -1,5 +1,6 @@
 #pragma once
 #include "day.h"
+#include <iostream>
 
 class Month{
 private:
@@ -8,8 +9,8 @@ private:
 
 
 public:
-    Month(int _month_number);
+    Month();
 
 
-    int display_days();
+    int display_month(int _month_number);
 };

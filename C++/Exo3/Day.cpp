@@ -1,7 +1,7 @@
 #include "Day.h"
 
 Day::Day(int _day_position) {
-    day_position = _day_position;
+    day_position=_day_position;
 }
 
 Day::Day() {
