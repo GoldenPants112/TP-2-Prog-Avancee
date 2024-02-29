@@ -91,11 +91,11 @@ int Month::get_max_day(int _month_number) {
 }
 
 
-//////////////// affichage ne fonctionne pas voir position
+
 
 
 int Month::display_days_in_month(int _decalage_de_caractere, int _jour_max) {
-    int position = _decalage_de_caractere / 3;
+    int position = (_decalage_de_caractere/3)+1;
 
     //afficher les points en fonction du decalage de caracteres
     switch (_decalage_de_caractere) {
@@ -115,15 +115,21 @@ int Month::display_days_in_month(int _decalage_de_caractere, int _jour_max) {
 
     //afficher tous les jours du mois
     for (int j = 1; j <= _jour_max; j++) {
+
         //affiche les jours du mois avec le bon format (espace et saut a la ligne)
-        if (j%7 == 0 && j>=10){
+        //saut la ligne apres 7 elements ( . ou jours)
+        if (position%7 == 0 && j>=10){
             std::cout<< j <<"\n";
             _decalage_de_caractere =0;
+            position=1;
         }
-        else if (j%7 == 0 && j<10){
+        else if (position%7 == 0 && j<10){
             std::cout<< " "<<j <<"\n";
             _decalage_de_caractere =0;
+            position=1;
         }
+
+        //affichage des jours. Different espace si le nombre a 2 chiffres ou 1 seul
         else if(j<10){
             std::cout << " "<< j << " ";
             _decalage_de_caractere+=3;
@@ -134,8 +140,6 @@ int Month::display_days_in_month(int _decalage_de_caractere, int _jour_max) {
             _decalage_de_caractere+=3;
             position+=1;
         }
-
     }
-    //std::cout<<_decalage_de_caractere;
     return _decalage_de_caractere;
 }
