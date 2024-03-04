@@ -6,7 +6,8 @@ Calendar::Calendar(){
 
 void Calendar::display(int _year) {
     Month mois;
-    int premier_janvier=15;
+    //premier janvier est defini par le decalge de caractere (0-dim /1-lun )
+    int premier_janvier=3;
     int decalage_premier_du_mois;
     //faire le code ci-dessous pour les 12 mois, et les afficher
     for (int i=1; i<13;i++){
