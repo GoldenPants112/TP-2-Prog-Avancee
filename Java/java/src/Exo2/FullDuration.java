@@ -43,4 +43,44 @@ public class FullDuration {
         return dureeConverti;
     }
 
+    public void incrementJour(){
+        jour++;
+    }
+    public void incrementHeure(){
+        heure++;
+    }
+    public void incrementMinute(){
+        minute++;
+    }
+    public void incrementSeconde(){
+        seconde++;
+    }
+
+    public void incrementJour(int _increment){
+        jour+= _increment;
+    }
+    public void incrementHeure(int _increment){
+        heure+=_increment;
+    }
+    public void incrementMinute(int _increment){
+        minute+=_increment;
+    }
+    public void incrementSeconde(int _increment){
+        seconde+=_increment;
+    }
+
+    public void normalise(){
+        while (seconde >= 60) {
+            seconde -= 60;
+            minute++;
+        }
+        while (minute >= 60) {
+            minute -= 60;
+            heure++;
+        }
+        while (heure >= 24) {
+            heure -= 24;
+            jour++;
+        }
+    }
 }
