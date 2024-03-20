@@ -1,4 +1,4 @@
-package forme;
+package Exo1.forme;
 
 public class Forme {
     private  int f0;
