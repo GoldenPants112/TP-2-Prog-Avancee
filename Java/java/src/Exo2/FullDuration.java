@@ -18,11 +18,6 @@ public class FullDuration {
         minute=0;
         seconde=0;
     }
-    public int convertSecDuration(){
-        int result=0;
-        result+= seconde + 60*minute + 3600*heure + 3600*24*jour;
-        return result;
-    }
     public int afficheJour(){
         return jour;
     }
@@ -41,6 +36,11 @@ public class FullDuration {
         heure = (_duree.affiche()-jour*86400)/3600;
         minute = (_duree.affiche()-(jour*86400 + heure*3600))/60;
         seconde = (_duree.affiche()-(jour*86400 + heure*3600 + minute*60));
+    }
+
+    public SecDuration convertSecDuration(){
+        Exo2.SecDuration dureeConverti = new SecDuration(jour*3600*24+heure*3600+minute*60+seconde);
+        return dureeConverti;
     }
 
 }

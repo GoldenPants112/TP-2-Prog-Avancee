@@ -10,8 +10,8 @@ public abstract class Main {
 
         Exo2.SecDuration dureeSec = new SecDuration(90061);
         dureeSec.incrementation(4);
-        dureeSec.
-        System.out.println(dureeSec.affiche());
+        Exo2.FullDuration dureeConverti = dureeSec.convertFullDuration();
+        System.out.println(dureeConverti.afficheJour()+" jours " + dureeConverti.afficheHeure()+" heures "+ dureeConverti.afficheMinute()+" minutes "+ dureeConverti.afficheSeocnde()+" secondes ");
 
     }
 }

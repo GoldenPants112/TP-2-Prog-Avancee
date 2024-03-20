@@ -20,7 +20,14 @@ public class SecDuration {
         second += _seconde;
     }
 
-    public void convertFullDuration(){
+    public FullDuration convertFullDuration(){
+
+        int j = second/86400;
+        int h = (second-j*86400)/3600;
+        int m = (second-(j*86400 + h*3600))/60;
+        int s = (second-(j*86400 + h*3600 + m*60));
+        Exo2.FullDuration dureeConverti= new FullDuration(j,h,m,s);
+        return dureeConverti;
 
     }
 
